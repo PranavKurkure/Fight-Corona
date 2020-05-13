@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "900115015834",
+    "firebase_url": "https://covid19-fighter-cfd7d.firebaseio.com",
+    "project_id": "covid19-fighter-cfd7d",
+    "storage_bucket": "covid19-fighter-cfd7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900115015834:android:4b58146c335bf83c6f1723",
+        "android_client_info": {
+          "package_name": "com.example.fight_corona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900115015834-4a42lebb06qona8v2rtqrlss11r4n02c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD97dvUQTR-GmetIfOEWf73IUYvytuMyk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900115015834-4a42lebb06qona8v2rtqrlss11r4n02c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

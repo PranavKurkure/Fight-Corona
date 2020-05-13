@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".donate">
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="368dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/UPI_ID"
+        android:layout_width="368dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="27dp"
+        android:hint="UPI ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="368dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="27dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UPI_ID"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="368dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="27dp"
+        android:hint="Note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:text="Send via UPI"
+        android:background="#17b739"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note"
+        tools:ignore="InvalidId" />
+
+
+    <TextView
+        android:id="@+id/auto_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="34dp"
+        android:text="Not sure who to donate?"
+        android:textColor="#0097DC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_donate">
+
+<!--        <com.getbase.floatingactionbutton.FloatingActionsMenu-->
+<!--            android:layout_width="208dp"-->
+<!--            android:layout_height="66dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true" />-->
+        <ImageView
+            android:id="@+id/fab"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/qrcode"
+            android:outlineSpotShadowColor="#000"
+            android:clickable="true"
+            android:padding="5dp" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

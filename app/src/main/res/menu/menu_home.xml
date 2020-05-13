@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fight_corona.HomeActivity">
+<!--    <item-->
+<!--        android:id="@+id/action_settings"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/action_settings"-->
+<!--        app:showAsAction="never"-->
+<!--        >-->
+
+<!--        <menu>-->
+<!--            <item android:id="@+id/subitem1"-->
+<!--                android:title="Sample">-->
+<!--            </item>-->
+<!--            <item android:id="@+id/subitem2"-->
+<!--                android:title="Replace">-->
+<!--            </item>-->
+<!--        </menu>-->
+
+<!--    </item>-->
+
+    <item
+        android:id="@+id/contact_developer"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_search"
+        android:title="About us"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/faq"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_phone"
+        android:title="FAQ's"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/dark_mode"
+        android:title="Dark Mode"
+        android:icon="@drawable/ic_brightness"
+        android:orderInCategory="101"
+        app:actionViewClass="android.widget.Switch"
+        app:showAsAction="never"
+        />
+
+
+
+</menu>
