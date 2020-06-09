@@ -36,18 +36,34 @@
         android:layout_below="@+id/imageView"
         />
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:text="Description"
-        android:textColor="#a9a9a9"
-        android:textSize="18sp" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="369dp"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Description"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

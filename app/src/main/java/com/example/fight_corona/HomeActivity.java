@@ -111,41 +111,35 @@ public class HomeActivity extends AppCompatActivity implements  View.OnClickList
             case R.id.bankcardId :
                Intent i = new Intent(this,donate.class);
                startActivity(i);
+               overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
             case R.id.contactId :
                 Intent i1 = new Intent(this,contacts_class.class);
                 startActivity(i1);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
             case R.id.talkId :
                 Intent i2 = new Intent(this,talk_class.class);
                 startActivity(i2);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
             case R.id.reportId :
-                goToFunction();
                 Intent i3 = new Intent(this,report_class.class);
                 startActivity(i3);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
             case R.id.statId :
                 Intent i4 = new Intent(this,stats_class.class);
                 startActivity(i4);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
             case R.id.dodonId :
                 Intent i5 = new Intent(this,dodon_class.class);
                 startActivity(i5);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
         }
     }
 
-    private void goToFunction() {
-        loadingDialog.startLoadingDialog();
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                loadingDialog.dismissDialog();
-            }
-        },3000);
 
-
-    }
 }

@@ -31,6 +31,15 @@ public class stats_class extends AppCompatActivity {
     private RequestQueue mq;
     public String val;
     int flag = 0;
+
+    @Override
+    public void finish()
+    {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

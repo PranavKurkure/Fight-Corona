@@ -23,11 +23,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -158,6 +154,13 @@ public class contacts_class extends AppCompatActivity {
         else{
             Toast.makeText(contacts_class.this,"Please select a state",Toast.LENGTH_LONG).show();
         }
+    }
+
+    @Override
+    public void finish()
+    {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     @Override

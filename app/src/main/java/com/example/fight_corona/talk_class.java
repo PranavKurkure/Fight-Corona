@@ -14,4 +14,11 @@ public class talk_class extends AppCompatActivity {
         getSupportActionBar().setTitle("Fight Corona");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    @Override
+    public void finish()
+    {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
 }

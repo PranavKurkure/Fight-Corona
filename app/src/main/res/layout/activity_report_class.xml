@@ -139,8 +139,8 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAadhar" />
 
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageView"
+    <ImageView
+        android:id="@+id/imgview"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
@@ -148,21 +148,31 @@
         android:layout_marginTop="36dp"
         android:cropToPadding="true"
         android:src="@drawable/ic_person"
-        app:civ_border_color="#FDD835"
-        app:civ_border_width="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
-        android:id="@+id/btnUp"
+        android:id="@+id/btnupload"
         android:layout_width="150dp"
         android:layout_height="46dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="144dp"
         android:background="@drawable/rounded_button"
         android:text="Upload Data"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imgview"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <Button
+        android:id="@+id/btnchoose"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Choose Image"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
 
